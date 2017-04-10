@@ -184,7 +184,7 @@
     <script>
         $(document).ready(function () {
             $("#contact-submit").click(function () {
-                $.post("http://10.1.170.145/mermaid/api/send-message",
+                $.post("{{route('send.message')}}",
                         {
                             name: $("#contact-form-name").val(),
                             phone_number: $("#contact-form-phone").val(),

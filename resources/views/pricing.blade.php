@@ -506,7 +506,7 @@
         {
             $('#template-booking').booking();
             $("#booking-form-submit").click(function(){
-                $.post("http://10.1.170.145/mermaid/api/request-booking",
+                $.post("{{route('request.booking')}}",
                         {
                             first_name : $("#booking-form-first-name").val(),
                             second_name :$("#booking-form-second-name").val(),

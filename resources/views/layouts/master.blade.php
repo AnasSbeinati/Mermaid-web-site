@@ -216,7 +216,7 @@
 <script>
     $(document).ready(function () {
         $("#newsletter-form-subscribe").click(function () {
-            $.post("http://10.1.170.145/mermaid/api/follow",
+            $.post("{{route('follow')}}",
                     {
                         email: $("#newsletter-form-email").val()
                     },
@@ -225,7 +225,7 @@
                     });
         });
         $("#joinUs-submit").click(function () {
-            $.post("http://10.1.170.145/mermaid/api/request",
+            $.post("{{route('request')}}",
                     {
                         email: $("#joinUs-email").val(),
                         phone_number: $("#joinUs-phone").val(),
