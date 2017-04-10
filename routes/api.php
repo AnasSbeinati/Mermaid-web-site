@@ -20,3 +20,5 @@ Route::post('request-booking', 'HomeController@request_booking')->name('request.
 Route::post('send-message', 'HomeController@send_message')->name('send.message');
 Route::post('request', 'HomeController@request')->name('request');
 Route::post('follow', 'HomeController@follow')->name('follow');
+Route::post('sign-up', 'HomeController@sign_up')->name('sign_up');
+Route::post('login', 'HomeController@login')->name('login');
