@@ -16,7 +16,7 @@ use Illuminate\Http\Request;
 Route::get('/user', function (Request $request) {
     return $request->user();
 })->middleware('auth:api');
-Route::post('request-booking', 'HomeController@request_booking');
-Route::post('send-message', 'HomeController@send_message');
-Route::post('request', 'HomeController@request');
-Route::post('follow', 'HomeController@follow');
+Route::post('request-booking', 'HomeController@request_booking')->name('request.booking');
+Route::post('send-message', 'HomeController@send_message')->name('send.message');
+Route::post('request', 'HomeController@request')->name('request');
+Route::post('follow', 'HomeController@follow')->name('follow');
