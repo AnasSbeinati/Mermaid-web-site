@@ -3141,7 +3141,7 @@ ul.template-widget-list>li>.template-widget>h6
 .template-component-booking .template-component-booking-package-list
 {
 	display:flex;
-	flex-wrap:wrap-reverse;
+	flex-wrap:wrap;
 	flex-direction:row;
 	align-items:stretch;
 	margin:0px -15px 0px -15px;
@@ -3149,8 +3149,8 @@ ul.template-widget-list>li>.template-widget>h6
 
 .template-component-booking .template-component-booking-package-list>li
 {
-	flex-grow:1;
-	flex-basis:210px;
+	flex-grow:0;
+	flex-basis:30%;
 	text-align:center;
 	border-width:1px;
 	border-style:solid;
@@ -3162,7 +3162,7 @@ ul.template-widget-list>li>.template-widget>h6
 .template-component-booking .template-component-booking-package-list>li
 {
 	float:left;
-	width:400px;
+	width:270px;
 }
 
 .template-component-booking .template-component-booking-package-list>li>.template-component-booking-package-name
@@ -4761,6 +4761,26 @@ form #joinUs {
 }
 #login_buttom{
     cursor: p;
+}
+
+/*media queries*/
+@media screen and (max-width: 699px) and (min-width: 520px) {
+	.template-component-booking .template-component-booking-package-list>li {
+		flex-basis: 100%;
+	}
+
+}
+@media screen and (max-width: 1000px) and (min-width: 700px) {
+	.template-component-booking .template-component-booking-package-list>li {
+		flex-basis: 100%;
+	}
+
+}
+@media screen and (min-width: 1001px) {
+
+	.template-component-booking .template-component-booking-package-list>li {
+		flex-basis: 30%%;
+	}
 }
 
 
