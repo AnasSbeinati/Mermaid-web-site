@@ -24,6 +24,10 @@ class HomeController extends Controller
             $user->apartment_number = $request['apartment_number'];
             $user->booking_date = $request['booking_date'];
             $user->comments = $request['comments'];
+            $user->estimated_time = $request['estimated_time'];
+            $user->estimated_cost = $request['estimated_cost'];
+            $user->package = $request['package'];
+            $user->extras = json_encode($request['extras']);
             $user->save();
 //            $req['email'] = "test";
 //            Mail::to("a7medsshahin@gmail.com")->send(new RequestBooking($req));
