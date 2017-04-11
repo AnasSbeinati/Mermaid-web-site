@@ -573,7 +573,7 @@
                                 <form id="login" class="form-horizontal" role="form">
                                     <div class="form-group">
                                         <div class="col-sm-12">
-                                            <input id="login-email" name="Email" type="Email" placeholder="Email *" class="form-control" required>
+                                            <input id="login-email" name="Email" type="text" placeholder="Email *" class="form-control" required>
                                         </div>
                                     </div>
                                     <div class="form-group">
@@ -792,13 +792,13 @@
                    var dateTime = date+' '+time;
                    $.post("{{route('sign_up')}}",
                        {
-                           first_name: toString(("#sign-up-first_name").val()),
-                           second_name: toString($("#sign-up-second_name").val()),
-                           phone_number: toString($("#sign-up-phone").val()),
-                           address: toString($("#sign-up-address").val()),
-                           email: toString($("#sign-up-email").val()),
-                           apartment_number: toString($("#sign-up-apartment_number").val()),
-                           password: toString($("#sign-up-pass").val())
+                           first_name: ("#sign-up-first_name").val(),
+                           second_name: $("#sign-up-second_name").val(),
+                           phone_number: $("#sign-up-phone").val(),
+                           address: $("#sign-up-address").val(),
+                           email: $("#sign-up-email").val(),
+                           apartment_number: $("#sign-up-apartment_number").val(),
+                           password: $("#sign-up-pass").val()
                        },
                        function (data, status) {
                            d = data;
@@ -816,14 +816,16 @@
             });
             $("#login-submit").click(function() {
                 var x = readCookie('user_type');
+                console.log($("#login-email").val());
+                console.log($("#login-pass").val());
                 if (x==null) {
                     $.post("{{route('login')}}",
                         {
-                            email: toString($("#login-email").val()),
-                            password: toString($("#login-pass").val())
+                            email: $("#login-email").val(),
+                            password: $("#login-pass").val()
                         },
                         function (data, status) {
-                            alert("Data: " + data + "\nStatus: " + status);
+                            console.log(data);
                             if (status == 200) {
                                 var expires = "";
                                 if (days) {
