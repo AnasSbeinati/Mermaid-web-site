@@ -73,7 +73,7 @@
                     <!-- Slide 1 -->
                     <li data-index="slide-1" data-transition="fade" data-slotamount="1" data-easein="default" data-easeout="default" data-masterspeed="500" data-rotate="0" data-delay="6000">
                         <!-- Main image -->
-                        <img src="{{url('/media/image/slider/slider_01.jpg')}}" alt="slide-1" data-bgfit="cover" data-bgposition="center bottom">
+                        <img src="{{url('/media/image/slider/slider_011.jpg')}}" alt="slide-1" data-bgfit="cover" data-bgposition="center bottom">
                         <!-- Layers -->
                         <!-- Layer 01 -->
                         <div class="tp-caption tp-resizeme"
@@ -134,7 +134,8 @@
                              style="letter-spacing: 4px;"
                         >
 
-                            YOUR HOUSE IS
+                           HIRE A TRUSTED PROFESSIONAL
+
                         </div>
 
                         <!-- Layer 03 -->
@@ -165,7 +166,7 @@
                              style="letter-spacing: 4px;"
                         >
 
-                            IN GREAT HANDS WITH US
+                            AND GET CLEANING DONE !
                         </div>
 
                         <!-- Layer 04 -->
@@ -202,7 +203,13 @@
             </div>
         </div>
         <!--/-->
-
+        <div class="as-seen-on">
+            <h4>As Seen On</h4>
+            <div class="images">
+                <img src="media/image/cbc%202%20png.png">
+                <img src="media/image/scene-logo.png">
+            </div>
+        </div>
         <!-- Slider JS -->
         <script type="text/javascript">
             var tpj=jQuery;
@@ -325,7 +332,8 @@
 
                 <!-- Text -->
                 <p class="template-padding-reset">
-                    Mermaid is an online platform connecting professional trusted cleaners with our customers offering you hassle-free help for your home. We are an amazing team of professional cleaners, customer service and business professionals, all having just one target, to help our customers and let them enjoy their time, while we get the cleaning done!
+                    Mermaid is the best solution to get a professional trusted cleaner!
+
                 </p>
 
                 <!-- Feature list -->
@@ -353,8 +361,8 @@
                             <h5>Contact Us</h5>
                             <ul class="template-component-list">
                                 <li><span class="template-icon-meta-check"></span>Happy to help you</li>
-                                <li><span class="template-icon-meta-check"></span>Our email is checked hourly during the day</li>
-                                <li><span class="template-icon-meta-check"></span>Chat with us on facebook</li>
+                                <li><span class="template-icon-meta-check"></span>Our customer service are here for you</li>
+                                <li><span class="template-icon-meta-check"></span>CChat with us on facebook</li>
                             </ul>
                         </li>
 
@@ -402,11 +410,14 @@
                 <!-- Center column -->
                 <li class="template-layout-column-center">
                     <span class="template-icon-feature-location-map"></span>
-                    <h5>Our Headquarters</h5>
+                    <h5>Available at </h5>
                     <p>
                         Cairo
                         <br/>
-                        Cairo, Egypt
+                        maady <br/>
+                        mohndsien <br/>
+                        zamalek <br/>
+                        downtown <br/>
                     </p>
                 </li>
 
@@ -421,50 +432,6 @@
 
             </ul>
         </div>
-
-    </div>
-
-    <!-- Google Maps -->
-    <div class="template-section template-section-padding-reset template-clear-fix">
-
-        <!-- Google Map -->
-        <div class="template-component-google-map">
-
-            <!-- Content -->
-            <div class="template-component-google-map-box">
-                <div class="template-component-google-map-box-content"></div>
-            </div>
-
-            <!-- Button -->
-            <a href=" " class="template-component-google-map-button">
-                <span class="template-icon-meta-marker"></span>
-                <span class="template-component-google-map-button-label-show">Show Map</span>
-                <span class="template-component-google-map-button-label-hide">Hide Map</span>
-            </a>
-
-        </div>
-
-        <script type="text/javascript">
-
-            jQuery(document).ready(function()
-            {
-                jQuery('.template-component-google-map').templateGoogleMap(
-                        {
-                            coordinate		:
-                            {
-                                lat			:	'30.0444',
-                                lng			:	'31.2357'
-                            },
-                            dimension		:
-                            {
-                                width		:	'100%',
-                                height		:	'400px'
-                            },
-                            marker			:	"{{url('/media/image/map_pointer.png')}}"
-                        });
-            });
-
-        </script>
 
     </div>
 

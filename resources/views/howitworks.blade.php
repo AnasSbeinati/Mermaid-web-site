@@ -100,15 +100,15 @@
 
                 <!-- Text -->
                 <p>
-                    We are dedicated to providing quality service, customer satisfaction at a great value in multiple locations offering convenient hours.<br/>
-                    Our goal is to provide our customers with the friendliest, most convenient house cleaning experience possible.
+                    We are redefining cleaning as you know it. We offer a service we all need, all the time. Forget the hassle of looking for a trusted reliable cleaner and get your mermaid NOW!
+
                 </p>
 
                 <!-- Space -->
                 <div class="template-component-space template-component-space-2"></div>
 
                 <!-- Button -->
-                <a href="#" class="template-component-button template-align-center">Get a Mermaid</a>
+                <a href="{{route('pricing')}}" class="template-component-button template-align-center">Get a Mermaid</a>
 
             </div>
 

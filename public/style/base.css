@@ -3141,7 +3141,7 @@ ul.template-widget-list>li>.template-widget>h6
 .template-component-booking .template-component-booking-package-list
 {
 	display:flex;
-	flex-wrap:wrap;
+	flex-wrap:wrap-reverse;
 	flex-direction:row;
 	align-items:stretch;
 	margin:0px -15px 0px -15px;
@@ -3161,8 +3161,8 @@ ul.template-widget-list>li>.template-widget>h6
 
 .template-component-booking .template-component-booking-package-list>li
 {
-	float:left \9;
-	width:270px \9;
+	float:left;
+	width:400px;
 }
 
 .template-component-booking .template-component-booking-package-list>li>.template-component-booking-package-name
@@ -4692,7 +4692,7 @@ form #joinUs {
 .as-seen-on{
 	display: table;
 	width: 100%;
-	height: 150px;
+	height: 120px;
 	background-color: #F3F3F3;
 	position: relative;
 	bottom: 0px;
@@ -4704,11 +4704,11 @@ form #joinUs {
 	width: 70%;
 }
 .as-seen-on .images img{
-	max-height: 95px!important;
+	max-height: 75px!important;
 	display: inline-block;
 	margin-left: 20px;
 	padding: 5px 5px;
-	box-shadow: 0px 3px 2px 0px rgba(107,105,107,1);
+	/*box-shadow: 0px 3px 2px 0px rgba(107,105,107,1);*/
 }
 
 .as-seen-on h4{
@@ -4722,6 +4722,9 @@ form #joinUs {
 	cursor: pointer;
 }
 #logingModal{
+	margin-top: 90px;
+}
+#succModal{
 	margin-top: 90px;
 }
 .tab-content{
@@ -4757,7 +4760,7 @@ form #joinUs {
 	transition:background-color 0.2s ease,border-color 0.2s ease,color 0.2s ease;
 }
 #login_buttom{
-    cursor: pointer;
+    cursor: p;
 }
 
 

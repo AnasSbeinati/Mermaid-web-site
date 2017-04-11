@@ -70,7 +70,7 @@
             <div class="template-main">
 
                 <div class="template-header-bottom-page-title">
-                    <h1>Book A Mermaid</h1>
+                    <h1>Book your trusted cleaners</h1>
                 </div>
 
                 <div class="template-header-bottom-page-breadcrumb">
@@ -117,13 +117,12 @@
                                 <li>
 
                                     <!-- Header -->
-                                    <h4 class="template-component-booking-package-name">House Space 100-150 m </h4>
+                                    <h4 class="template-component-booking-package-name">House Space 80-120 m </h4>
 
                                     <!-- Price -->
                                     <div class="template-component-booking-package-price">
                                         <span class="template-component-booking-package-price-currency">EGP</span>
                                         <span class="template-component-booking-package-price-total">220</span>
-                                        <span class="template-component-booking-package-price-decimal">00</span>
                                     </div>
 
                                     <!-- Duration -->
@@ -139,6 +138,13 @@
                                         <li>Kitchen and bathrooms cleaning.</li>
                                         <li>Glass/Mirror cleaning.</li>
                                         <li>Vacuuming carpets.</li>
+                                        <li>Tables and chairs cleaned.</li>
+                                        <li>Furniture dusted.</li>
+                                        <li>Tub and shower tiles scrubbed.</li>
+                                        <li>disinfected and rinsed
+                                            Toilets.</li>
+                                        <li>Cabinets exterior cleaned.</li>
+                                        <li>Vacuuming carpets.</li>
                                         <li>Setting up beds.</li>
                                     </ul>
 
@@ -153,13 +159,12 @@
                                 <li>
 
                                     <!-- Header -->
-                                    <h4 class="template-component-booking-package-name">House Space 150-200 m</h4>
+                                    <h4 class="template-component-booking-package-name">House Space 120-160 m</h4>
 
                                     <!-- Price -->
                                     <div class="template-component-booking-package-price">
                                         <span class="template-component-booking-package-price-currency">EGP</span>
-                                        <span class="template-component-booking-package-price-total">260</span>
-                                        <span class="template-component-booking-package-price-decimal">00</span>
+                                        <span class="template-component-booking-package-price-total">250</span>
                                     </div>
 
                                     <!-- Duration -->
@@ -175,6 +180,13 @@
                                         <li>Kitchen and bathrooms cleaning.</li>
                                         <li>Glass/Mirror cleaning.</li>
                                         <li>Vacuuming carpets.</li>
+                                        <li>Tables and chairs cleaned.</li>
+                                        <li>Furniture dusted.</li>
+                                        <li>Tub and shower tiles scrubbed.</li>
+                                        <li>disinfected and rinsed
+                                            Toilets.</li>
+                                        <li>Cabinets exterior cleaned.</li>
+                                        <li>Vacuuming carpets.</li>
                                         <li>Setting up beds.</li>
                                     </ul>
 
@@ -187,21 +199,27 @@
 
                                 <!-- Package -->
                                 <li>
-                                    <h4 class="template-component-booking-package-name">House Space +200-250 m</h4>
+                                    <h4 class="template-component-booking-package-name">House Space 160-200 m</h4>
                                     <div class="template-component-booking-package-price">
                                         <span class="template-component-booking-package-price-currency">EGP</span>
-                                        <span class="template-component-booking-package-price-total">+300</span>
-                                        <span class="template-component-booking-package-price-decimal">00</span>
+                                        <span class="template-component-booking-package-price-total">290+</span>
                                     </div>
                                     <div class="template-component-booking-package-duration">
                                         <span class="template-icon-booking-meta-duration"></span>
-                                        <span class="template-component-booking-package-duration-value">360+ mins</span>
+                                        <span class="template-component-booking-package-duration-value">360 mins</span>
                                         <span class="template-component-booking-package-duration-unit">+6 hours</span>
                                     </div>
                                     <ul class="template-component-booking-package-service-list">
                                         <li>Dusting and sweeping of all surfaces.</li>
                                         <li>Kitchen and bathrooms cleaning.</li>
                                         <li>Glass/Mirror cleaning.</li>
+                                        <li>Vacuuming carpets.</li>
+                                        <li>Tables and chairs cleaned.</li>
+                                        <li>Furniture dusted.</li>
+                                        <li>Tub and shower tiles scrubbed.</li>
+                                        <li>disinfected and rinsed
+                                            Toilets.</li>
+                                        <li>Cabinets exterior cleaned.</li>
                                         <li>Vacuuming carpets.</li>
                                         <li>Setting up beds.</li>
                                     </ul>
@@ -210,6 +228,36 @@
                                     </div>
                                 </li>
 
+                                <!-- Package -->
+                                <li>
+                                    <h4 class="template-component-booking-package-name">House Space 200-250+ m</h4>
+                                    <div class="template-component-booking-package-price">
+                                        <span class="template-component-booking-package-price-currency">EGP</span>
+                                        <span class="template-component-booking-package-price-total">300+</span>
+                                    </div>
+                                    <div class="template-component-booking-package-duration">
+                                        <span class="template-icon-booking-meta-duration"></span>
+                                        <span class="template-component-booking-package-duration-value">360+ mins</span>
+                                        <span class="template-component-booking-package-duration-unit">6+ hours</span>
+                                    </div>
+                                    <ul class="template-component-booking-package-service-list">
+                                        <li>Dusting and sweeping of all surfaces.</li>
+                                        <li>Kitchen and bathrooms cleaning.</li>
+                                        <li>Glass/Mirror cleaning.</li>
+                                        <li>Vacuuming carpets.</li>
+                                        <li>Tables and chairs cleaned.</li>
+                                        <li>Furniture dusted.</li>
+                                        <li>Tub and shower tiles scrubbed.</li>
+                                        <li>disinfected and rinsed
+                                            Toilets.</li>
+                                        <li>Cabinets exterior cleaned.</li>
+                                        <li>Vacuuming carpets.</li>
+                                        <li>Setting up beds.</li>
+                                    </ul>
+                                    <div class="template-component-button-box">
+                                        <a href="#" class="template-component-button">Select</a>
+                                    </div>
+                                </li>
                             </ul>
 
                         </div>
@@ -240,11 +288,11 @@
                                 <li data-id="oven-clean" class="template-clear-fix">
                                     <div class="template-component-booking-service-name">
                                         <span>Detergents</span>
-                                        <a href="#" class="template-component-more-link">
+                                       {{-- <a href="#" class="template-component-more-link">
                                             <span>More...</span>
                                             <span>Less...</span>
-                                        </a>
-                                        <div class="template-component-more-content">
+                                        </a>--}}
+                                        <div class="template-component-more-content" style="display: block">
                                             If you will not select this service, please make sure you have all cleaning materials and cleaning cloths.
                                         </div>
                                     </div>
@@ -256,7 +304,8 @@
                                     <div class="template-component-booking-service-price">
                                         <span class="template-icon-booking-meta-price"></span>
                                         <span class="template-component-booking-service-price-currency">EGP</span>
-                                        <span class="template-component-booking-service-price-value">20.00</span>
+                                        <span class="">FREE</span>
+                                        <span class="template-component-booking-service-price-value" style="display: none">00.00</span>
                                     </div>
                                     <div class="template-component-button-box">
                                         <a href="#" class="template-component-button">Select</a>
@@ -809,7 +858,6 @@
              $("#logingModal").modal('hide');
              $("#logingMsgSuccModal").modal('toggle')
              });*/
-
             $("#login_buttom").click(function () {
                 $(".modal").modal('hide');
                 if(checkBookingForm()){
@@ -839,9 +887,6 @@
                     $("#filling_form").css("display", "block");
                 }
             });
-            $("#becomeMermaid").click(function () {
-                $("#mermaidModal").modal('toggle')
-            })
         });
     </script>
 @stop
