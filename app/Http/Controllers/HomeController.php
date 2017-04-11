@@ -84,7 +84,7 @@ class HomeController extends Controller
                 'email' => 'required|email|unique:users,email'
             ]);
             if ($validator->fails()) {
-                return response()->json($validator->errors(), 401);
+                return response()->json($validator->errors(), 409);
             }
             $user = new User();
             $user->first_name = $request['first_name'];
@@ -93,7 +93,7 @@ class HomeController extends Controller
             $user->address = $request['address'];
             $user->phone_number = $request['phone_number'];
             $user->apartment_number = $request['apartment_number'];
-            $user->booking_date = $request['booking_date'];
+            //$user->booking_date = $request['booking_date'];
             $user->password = sha1($request['password']);
             $user->save();
             return response()->json($user, 200);
