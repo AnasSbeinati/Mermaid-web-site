@@ -107,11 +107,14 @@
                     <!-- Center column -->
                     <li class="template-layout-column-center">
                         <span class="template-icon-feature-location-map"></span>
-                        <h5>Our Headquarters</h5>
+                        <h5>Available at </h5>
                         <p>
                             Cairo
                             <br/>
-                            Cairo, Egypt
+                            maady <br/>
+                            mohndsien <br/>
+                            zamalek <br/>
+                            downtown <br/>
                         </p>
                     </li>
 
@@ -134,7 +137,7 @@
         <div class="template-section template-padding-reset template-main template-clear-fix">
 
             <!-- Contact form -->
-            <form >
+            <form class="template-component-contact-form">
 
                 <!-- Layout 50x50% -->
                 <ul class="template-layout-50x50 template-layout-margin-reset template-clear-fix">
@@ -167,7 +170,8 @@
 
                 <!-- Button -->
                 <div class="template-align-center template-clear-fix template-margin-top-1">
-								<span class="template-state-block">
+                    <h4 id="filling_form" style="color:red;display: none;text-transform: uppercase;">Fill The form correctly</h4>
+                    <span class="template-state-block">
 									<input type="button" value="Submit Message" class="template-component-button"
                                            name="contact-submit" id="contact-submit"/>
 								</span>
@@ -177,14 +181,37 @@
 
             <!-- Space -->
             <div class="template-component-space template-component-space-4"></div>
-
+            {{--modal--}}
+            <div id="ConfirmSuccModal" class="modal fade">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-body">
+                            <br><br>
+                            <div class="center-block" style="text-align: center;">
+                                <h2>THANK<span style="color: #8220a2;"> YOU!!</span></h2>
+                                <br>
+                                <button type="button" id="close-modal"  class="btn btn-default btn-lg">Back</button>
+                            </div>
+                            <br><br>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
         
     </div>
     <script>
+        function checkForm() {
+            if($("#contact-form-name").val()===""||$("#contact-form-phone").val()===""
+            ||$("#contact-form-email").val()===""||$("#contact-form-message").val()===""){
+                return false;
+            }
+            return true;
+        }
         $(document).ready(function () {
             $("#contact-submit").click(function () {
-                $.post("{{route('send.message')}}",
+                if(checkForm()) {
+                    $.post("{{route('send.message')}}",
                         {
                             name: $("#contact-form-name").val(),
                             phone_number: $("#contact-form-phone").val(),
@@ -192,11 +219,16 @@
                             message: $("#contact-form-message").val()
                         },
                         function (data, status) {
-                            alert("Data: " + data + "\nStatus: " + status);
+                            $('.template-component-contact-form').children('input').val('');
+                            $('#ConfirmSuccModal').modal('toggle');
+
                         });
+                }else{
+                    $('#filling_form').css("display","block");
+                }
             });
-            $("#becomeMermaid").click(function () {
-                $("#mermaidModal").modal('toggle')
+            $("#close-modal").click(function () {
+               location.reload();
             })
         });
     </script>

@@ -54,6 +54,7 @@
             <!-- Social icons -->
             <div class="template-header-top-icon-list template-component-social-icon-list-1">
                 <ul class="template-component-social-icon-list">
+                    <li><a id="login_buttom">Login</a></li>
                     <li><a href="http://www.facebook.com/mermaideg" class="template-icon-social-facebook" target="_blank"></a></li>
                     <li><a href="http://www.instagram.com/mermaideg" class="template-icon-social-instagram" target="_blank"></a></li>
                     <li><a href="https://www.linkedin.com/company-beta/10415531/" class="template-icon-social-linkedin" target="_blank"></a></li>
@@ -69,7 +70,7 @@
             <div class="template-main">
 
                 <div class="template-header-bottom-page-title">
-                    <h1>Book A Mermaid</h1>
+                    <h1>Book your trusted cleaners</h1>
                 </div>
 
                 <div class="template-header-bottom-page-breadcrumb">
@@ -116,13 +117,12 @@
                                 <li>
 
                                     <!-- Header -->
-                                    <h4 class="template-component-booking-package-name">House Space 100-150 m </h4>
+                                    <h4 class="template-component-booking-package-name">House Space 80-120 m </h4>
 
                                     <!-- Price -->
                                     <div class="template-component-booking-package-price">
                                         <span class="template-component-booking-package-price-currency">EGP</span>
                                         <span class="template-component-booking-package-price-total">220</span>
-                                        <span class="template-component-booking-package-price-decimal">00</span>
                                     </div>
 
                                     <!-- Duration -->
@@ -138,6 +138,13 @@
                                         <li>Kitchen and bathrooms cleaning.</li>
                                         <li>Glass/Mirror cleaning.</li>
                                         <li>Vacuuming carpets.</li>
+                                        <li>Tables and chairs cleaned.</li>
+                                        <li>Furniture dusted.</li>
+                                        <li>Tub and shower tiles scrubbed.</li>
+                                        <li>disinfected and rinsed
+                                            Toilets.</li>
+                                        <li>Cabinets exterior cleaned.</li>
+                                        <li>Vacuuming carpets.</li>
                                         <li>Setting up beds.</li>
                                     </ul>
 
@@ -152,13 +159,12 @@
                                 <li>
 
                                     <!-- Header -->
-                                    <h4 class="template-component-booking-package-name">House Space 150-200 m</h4>
+                                    <h4 class="template-component-booking-package-name">House Space 120-160 m</h4>
 
                                     <!-- Price -->
                                     <div class="template-component-booking-package-price">
                                         <span class="template-component-booking-package-price-currency">EGP</span>
-                                        <span class="template-component-booking-package-price-total">260</span>
-                                        <span class="template-component-booking-package-price-decimal">00</span>
+                                        <span class="template-component-booking-package-price-total">250</span>
                                     </div>
 
                                     <!-- Duration -->
@@ -174,6 +180,13 @@
                                         <li>Kitchen and bathrooms cleaning.</li>
                                         <li>Glass/Mirror cleaning.</li>
                                         <li>Vacuuming carpets.</li>
+                                        <li>Tables and chairs cleaned.</li>
+                                        <li>Furniture dusted.</li>
+                                        <li>Tub and shower tiles scrubbed.</li>
+                                        <li>disinfected and rinsed
+                                            Toilets.</li>
+                                        <li>Cabinets exterior cleaned.</li>
+                                        <li>Vacuuming carpets.</li>
                                         <li>Setting up beds.</li>
                                     </ul>
 
@@ -186,21 +199,27 @@
 
                                 <!-- Package -->
                                 <li>
-                                    <h4 class="template-component-booking-package-name">House Space +200-250 m</h4>
+                                    <h4 class="template-component-booking-package-name">House Space 160-200 m</h4>
                                     <div class="template-component-booking-package-price">
                                         <span class="template-component-booking-package-price-currency">EGP</span>
-                                        <span class="template-component-booking-package-price-total">+300</span>
-                                        <span class="template-component-booking-package-price-decimal">00</span>
+                                        <span class="template-component-booking-package-price-total">290+</span>
                                     </div>
                                     <div class="template-component-booking-package-duration">
                                         <span class="template-icon-booking-meta-duration"></span>
-                                        <span class="template-component-booking-package-duration-value">360+ mins</span>
+                                        <span class="template-component-booking-package-duration-value">360 mins</span>
                                         <span class="template-component-booking-package-duration-unit">+6 hours</span>
                                     </div>
                                     <ul class="template-component-booking-package-service-list">
                                         <li>Dusting and sweeping of all surfaces.</li>
                                         <li>Kitchen and bathrooms cleaning.</li>
                                         <li>Glass/Mirror cleaning.</li>
+                                        <li>Vacuuming carpets.</li>
+                                        <li>Tables and chairs cleaned.</li>
+                                        <li>Furniture dusted.</li>
+                                        <li>Tub and shower tiles scrubbed.</li>
+                                        <li>disinfected and rinsed
+                                            Toilets.</li>
+                                        <li>Cabinets exterior cleaned.</li>
                                         <li>Vacuuming carpets.</li>
                                         <li>Setting up beds.</li>
                                     </ul>
@@ -209,6 +228,36 @@
                                     </div>
                                 </li>
 
+                                <!-- Package -->
+                                <li>
+                                    <h4 class="template-component-booking-package-name">House Space 200-250+ m</h4>
+                                    <div class="template-component-booking-package-price">
+                                        <span class="template-component-booking-package-price-currency">EGP</span>
+                                        <span class="template-component-booking-package-price-total">300+</span>
+                                    </div>
+                                    <div class="template-component-booking-package-duration">
+                                        <span class="template-icon-booking-meta-duration"></span>
+                                        <span class="template-component-booking-package-duration-value">360+ mins</span>
+                                        <span class="template-component-booking-package-duration-unit">6+ hours</span>
+                                    </div>
+                                    <ul class="template-component-booking-package-service-list">
+                                        <li>Dusting and sweeping of all surfaces.</li>
+                                        <li>Kitchen and bathrooms cleaning.</li>
+                                        <li>Glass/Mirror cleaning.</li>
+                                        <li>Vacuuming carpets.</li>
+                                        <li>Tables and chairs cleaned.</li>
+                                        <li>Furniture dusted.</li>
+                                        <li>Tub and shower tiles scrubbed.</li>
+                                        <li>disinfected and rinsed
+                                            Toilets.</li>
+                                        <li>Cabinets exterior cleaned.</li>
+                                        <li>Vacuuming carpets.</li>
+                                        <li>Setting up beds.</li>
+                                    </ul>
+                                    <div class="template-component-button-box">
+                                        <a href="#" class="template-component-button">Select</a>
+                                    </div>
+                                </li>
                             </ul>
 
                         </div>
@@ -239,11 +288,11 @@
                                 <li data-id="oven-clean" class="template-clear-fix">
                                     <div class="template-component-booking-service-name">
                                         <span>Detergents</span>
-                                        <a href="#" class="template-component-more-link">
+                                       {{-- <a href="#" class="template-component-more-link">
                                             <span>More...</span>
                                             <span>Less...</span>
-                                        </a>
-                                        <div class="template-component-more-content">
+                                        </a>--}}
+                                        <div class="template-component-more-content" style="display: block">
                                             If you will not select this service, please make sure you have all cleaning materials and cleaning cloths.
                                         </div>
                                     </div>
@@ -255,7 +304,8 @@
                                     <div class="template-component-booking-service-price">
                                         <span class="template-icon-booking-meta-price"></span>
                                         <span class="template-component-booking-service-price-currency">EGP</span>
-                                        <span class="template-component-booking-service-price-value">20.00</span>
+                                        <span class="">FREE</span>
+                                        <span class="template-component-booking-service-price-value" style="display: none">00.00</span>
                                     </div>
                                     <div class="template-component-button-box">
                                         <a href="#" class="template-component-button">Select</a>
@@ -481,8 +531,9 @@
 
                             <!-- Text + submit button -->
                             <div class="template-align-center template-clear-fix template-margin-top-2">
+                                <h4 id="filling_form" style="color:red;display: none;text-transform: uppercase;">Fill The form correctly</h4>
                                 <p class="template-padding-reset template-margin-bottom-2">We will confirm your appointment with you by phone or e-mail within 24 hours of receiving your request.</p>
-                                <input type="submit" value="Confirm Booking" class="template-component-button" name="booking-form-submit" id="booking-form-submit"/>
+                                <input type="button" value="Confirm Booking" class="template-component-button" name="booking-form-submit" id="confirm-booking"/>
                                 <input type="hidden" value="" name="booking-form-data" id="booking-form-data"/>
                             </div>
 
@@ -497,29 +548,344 @@
         </div>
 
     </div>
+    <!--login modal-->
+    <div id="logingModal" class="modal fade">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal"
+                            aria-hidden="true">&times;</button>
+                    <h4 class="modal-title">Have An Account</h4>
+                </div>
+                <div class="modal-body">
+
+                    <div id="exTab3">
+                        <ul  class="nav nav-pills">
+                            <li class="active">
+                                <a  href="#1b" data-toggle="tab">Login</a>
+                            </li>
+                            <li><a href="#2b" data-toggle="tab">Sign up</a>
+                            </li>
+                        </ul>
+
+                        <div class="tab-content clearfix">
+                            <div class="tab-pane active" id="1b">
+                                <form id="login" class="form-horizontal" role="form">
+                                    <div class="form-group">
+                                        <div class="col-sm-12">
+                                            <input id="login-email" name="Email" type="Email" placeholder="Email *" class="form-control" required>
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <div class="col-sm-12">
+                                            <input id="login-pass" type="password" placeholder="Password *" class="form-control" required>
+                                        </div>
+                                    </div>
+                                    <span id="login_error" style="color: red;display: none;padding-left: 20px;text-transform: uppercase">Email Or Password is Wrong</span>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                                        <button type="button" id="login-submit" class="btn btn-primary">Login</button>
+                                    </div>
+                                </form>
+                            </div>
+                            <div class="tab-pane" id="2b">
+                                <form id="sign-up" class="form-horizontal" role="form">
+                                    <div class="form-group">
+                                        <div class="col-sm-12">
+                                            <input id="sign-up-email" name="Email" type="Email" placeholder="email *" class="form-control" required>
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <div class="col-sm-12">
+                                            <input id="sign-up-pass" type="password" placeholder="Password *" class="form-control" required>
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <div class="col-sm-12">
+                                            <input id="sign-up-pass2"  type="password" placeholder="Confirm Password *" class="form-control" required>
+                                        </div>
+                                    </div>
+                                    <div class="form-group addition">
+                                        <div class="col-sm-12">
+                                            <input id="sign-up-first_name"  type="text" placeholder="First Name *" class="form-control" required>
+                                        </div>
+                                    </div>
+                                    <div class="form-group addition">
+                                        <div class="col-sm-12">
+                                            <input id="sign-up-second_name"  type="text" placeholder="Second Name *" class="form-control" required>
+                                        </div>
+                                    </div>
+                                    <div class="form-group addition">
+                                        <div class="col-sm-12">
+                                            <input id="sign-up-phone"  type="text" placeholder="Phone Number*" class="form-control" required>
+                                        </div>
+                                    </div>
+                                    <div class="form-group addition">
+                                        <div class="col-sm-12">
+                                            <input id="sign-up-address"  type="text" placeholder="Address *" class="form-control" required>
+                                        </div>
+                                    </div>
+                                    <div class="form-group addition">
+                                        <div class="col-sm-12">
+                                            <input id="sign-up-apartment_number"  type="text" placeholder="Apartment Number *" class="form-control" required>
+                                        </div>
+                                    </div>
+                                    <span id="unothrized"style="color: red;padding-left: 20px;display: none;text-transform: uppercase">This Email Is Exist</span>
+                                    <span id="not_equal" style="color: red;padding-left: 20px;display: none;text-transform: uppercase">The password is not compatable</span>
+                                    <span id="embty_input" style="color: red;padding-left: 20px;display: none;text-transform: uppercase">Fill the form completly</span>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                                        <button type="button" data-target="modal" id="sign-up-submit" class="btn btn-primary">Sign up</button>
+                                    </div>
+                                </form>
+                            </div>
+
+                        </div>
+                    </div>
+
+
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <!--successfully-->
+    <div id="logingMsgSuccModal" class="modal fade">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <br><br>
+                    <div class="center-block" style="text-align: center;">
+
+                        <h2>Logged in <span style="color: #8220a2;">Successfully  !!</span></h2>
+                        <br>
+
+                        <button type="submit" id="confirmed-booking" class="btn btn-default btn-lg btn-back">Confirm Booking</button>
+                        <button type="button" id="close-modal" data-dismiss="modal" class="btn btn-default btn-lg">Back</button>
+                    </div>
+                    <br><br>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="ConfirmSuccModal" class="modal fade">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <br><br>
+                    <div class="center-block" style="text-align: center;">
+
+                        <h2>THANK<span style="color: #8220a2;"> YOU!!</span></h2>
+                        <h5 style="text-transform: uppercase">We will confirm the appointment with you soon.</h5>
+                        <br>
+                        <button type="button" id="close-modal" data-dismiss="modal" class="btn btn-default btn-lg">Back</button>
+                    </div>
+                    <br><br>
+                </div>
+            </div>
+        </div>
+    </div>
     <!-- Wrapper for date picker -->
     <div id="dtBox"></div>
     <!-- Plugins files -->
     <script type="text/javascript" src="{{url('/plugin/booking/jquery.booking.js')}}"></script>
     <script type="text/javascript">
+        function checkBookingForm() {
+            if($("#booking-form-first-name").val()===""||
+                $("#booking-form-second-name").val()===""||
+                $("#booking-form-phone").val()===""||
+                $("#booking-form-address").val()===""||
+                $("#booking-form-email").val()===""||
+                $("#booking-form-appartment").val()===""||
+                $("#booking-form-date").val()===""){
+                console.log("form is empty");
+                return false;
+            }
+            else {
+                return true;
+            }
+        }
+        function checkSignUp() {
+            if($("#sign-up-first_name").val()===""||
+                $("#sign-up-second_name").val()===""||
+                $("#sign-up-pass").val()===""||
+                $("#sign-up-pass2").val()===""||
+                $("#sign-up-address").val()===""||
+                $("#sign-up-phone").val()===""||
+                $("#sign-up-apartment_number").val()===""||
+                $("#sign-up-email").val()===""){
+                /*console.log("form is empty");*/
+                console.log($("#sign-up-first_name").val());
+                console.log($("#sign-up-second_name").val());
+                console.log($("#sign-up-phone").val());
+                console.log($("#sign-up-address").val());
+                console.log($("#sign-up-email").val());
+                console.log($("#sign-up-apartment_number").val());
+                console.log($("#sign-up-pass").val());
+                console.log($("#sign-up-pass2").val());
+                    return false;
+            }
+            else {
+                return true;
+            }
+        }
+        function readCookie(name) {
+            var nameEQ = name + "=";
+            var ca = document.cookie.split(';');
+            for(var i=0;i < ca.length;i++) {
+                var c = ca[i];
+                while (c.charAt(0)==' ') c = c.substring(1,c.length);
+                if (c.indexOf(nameEQ) == 0)
+                    return JSON.parse(c.substring(nameEQ.length,c.length));
+            }
+            return null;
+        }
+
         jQuery(document).ready(function($)
         {
             $('#template-booking').booking();
-            $("#booking-form-submit").click(function(){
-                $.post("{{route('request.booking')}}",
+
+            /*new code*/
+            var x = readCookie('user_type');
+            console.log(x);
+            if(x) {
+                $("#booking-form-first-name").val(x.first_name);
+                $("#booking-form-second-name").val(x.second - name);
+                $("#booking-form-phone").val(x.phone);
+                $("#booking-form-address").val(x.address);
+                $("#booking-form-email").val(x.email);
+                $("#booking-form-appartment").val(x.appartment);
+                $("#booking-form-date").val(x.date);
+                $("#login-buttom").css("display","none");
+            }
+            $("#confirmed-booking").click(function(){
+
+                    $.post("{{route('request.booking')}}",
                         {
-                            first_name : $("#booking-form-first-name").val(),
-                            second_name :$("#booking-form-second-name").val(),
-                            phone_number : $("#booking-form-phone").val(),
-                            address : $("#booking-form-address").val(),
-                            email : $("#booking-form-email").val(),
-                            apartment_number : $("#booking-form-appartment").val(),
-                            booking_date : $("#booking-form-date").val(),
-                            comments :$("#booking-form-message").val()
+                            first_name: $("#booking-form-first-name").val(),
+                            second_name: $("#booking-form-second-name").val(),
+                            phone_number: $("#booking-form-phone").val(),
+                            address: $("#booking-form-address").val(),
+                            email: $("#booking-form-email").val(),
+                            apartment_number: $("#booking-form-appartment").val(),
+                            booking_date: $("#booking-form-date").val(),
+                            comments: $("#booking-form-message").val()
                         },
-                        function(data,status){
-                            alert("Data: " + data + "\nStatus: " + status);
+                        function (data, status) {
+                            $('.modal').modal('hide');
+                            $('#ConfirmSuccModal').modal('show');
                         });
+            });
+            $("#sign-up-submit").click(function(){
+
+               if($("#sign-up-pass").val()!=$("#sign-up-pass2").val()){
+                   $("#not_equal").css("display","block");
+               }else if(!checkSignUp()){
+                   $("#embty_input").css("display","block");
+                  console.log("heeey");
+               }else {
+                   $("#not_equal").css("display","none");
+                   $("#embty_input").css("display","none");
+                   var today = new Date();
+                   var date = today.getFullYear()+'-'+(today.getMonth()+1)+'-'+today.getDate();
+                   var time = today.getHours() + ":" + today.getMinutes() + ":" + today.getSeconds();
+                   var dateTime = date+' '+time;
+                   $.post("{{route('sign_up')}}",
+                       {
+                           first_name: $("#sign-up-first_name").val(),
+                           second_name: $("#sign-up-second_name").val(),
+                           phone_number: $("#sign-up-phone").val(),
+                           address: $("#sign-up-address").val(),
+                           email: $("#sign-up-email").val(),
+                           apartment_number: $("#sign-up-appartment").val(),
+                           password: $("#sign-up-pass").val(),
+                           booking_date: dateTime
+                       },
+                       function (data, status) {
+                           d = data;
+                           console.log("Data: " + data + "\nStatus: " + status);
+                       }).fail(function () {
+                       console.log($("#sign-up-first_name").val());
+                       console.log($("#sign-up-second_name").val());
+                       console.log($("#sign-up-phone").val());
+                       console.log($("#sign-up-address").val());
+                       console.log($("#sign-up-email").val());
+                       console.log($("#sign-up-apartment_number").val());
+                       console.log($("#sign-up-pass").val());
+                       console.log(dateTime);
+                   });
+               }
+            });
+            $("#login-submit").click(function() {
+                var x = readCookie('user_type');
+                if (x==null) {
+                    $.post("{{route('login')}}",
+                        {
+                            email: $("#login-email").val(),
+                            password: $("#login-pass").val()
+                        },
+                        function (data, status) {
+                            alert("Data: " + data + "\nStatus: " + status);
+                            if (status == 200) {
+                                var expires = "";
+                                if (days) {
+                                    var date = new Date();
+                                    date.setTime(date.getTime() + (10000 * 24 * 60 * 60 * 1000));
+                                    expires = "; expires=" + date.toUTCString();
+                                }
+                                document.cookie = "user_type" + "=" + JSON.stringify(data) + expires + ";";
+                                $("#logingModal").modal('hide');
+                                $("#logingMsgSuccModal").modal('show');
+                            } else{
+                                $("#login_error").css("display", "block");
+                                console.log('login_error');
+                            }
+                        }).fail(function () {
+                        $("#login_error").css("display", "block");
+                        console.log('login_error');
+                    });
+                } else if(x&&checkBookingForm()) {
+                    $("confirmed-booking").modal('toggle');
+                    $("#filling_form").css("display", "none");
+                }else {
+                    $("#filling_form").css("display", "block");
+                }
+            });
+            $("#close-modal").click(function () {
+                $("#logingMsgSuccModal").modal('hide');
+            });
+            /*$("#login-submit").click(function () {
+             $("#logingModal").modal('hide');
+             $("#logingMsgSuccModal").modal('toggle')
+             });*/
+            $("#login_buttom").click(function () {
+                $(".modal").modal('hide');
+                if(checkBookingForm()){
+                    $(".addition").css("display", "none");
+                    $("#sign-up-email").val($("#booking-form-email").val());
+                    $("#sign-up-first_name").val($("#booking-form-first-name").val());
+                    $("#sign-up-second_name").val($("#booking-form-second-name").val());
+                    $("#sign-up-phone").val($("#booking-form-phone").val());
+                    $("#sign-up-address").val($("#booking-form-address").val());
+                    $("#sign-up-apartment_number").val($("#booking-form-appartment").val());
+
+                }
+                $("#logingModal").modal('show');
+            });
+            $("#confirm-booking").click(function () {
+                if(checkBookingForm()&&!x){
+                    $("#filling_form").css("display", "none");
+                    $(".addition").css("display", "none");
+                    $("#sign-up-email").val($("#booking-form-email").val());
+                    $("#sign-up-first_name").val($("#booking-form-first-name").val());
+                    $("#sign-up-second_name").val($("#booking-form-second-name").val());
+                    $("#sign-up-phone").val($("#booking-form-phone").val());
+                    $("#sign-up-address").val($("#booking-form-address").val());
+                    $("#sign-up-apartment_number").val($("#booking-form-appartment").val());
+                    $("#logingModal").modal('toggle');
+                }else{
+                    $("#filling_form").css("display", "block");
+                }
             });
         });
     </script>

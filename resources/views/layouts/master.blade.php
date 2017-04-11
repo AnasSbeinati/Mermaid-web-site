@@ -95,14 +95,14 @@
 
             <!-- Social icon list -->
             <ul class="template-component-social-icon-list template-component-social-icon-list-2">
-                <li><a href="" class="template-icon-social-twitter" target="_blank"></a></li>
-                <li><a href="" class="template-icon-social-facebook" target="_blank"></a></li>
-                <li><a href="" class="template-icon-social-youtube" target="_blank"></a></li>
+                <li><a href="https://www.facebook.com/mermaideg" class="template-icon-social-twitter" target="_blank"></a></li>
+                <li><a href="https://www.Instagram.com/mermaideg" class="template-icon-social-facebook" target="_blank"></a></li>
+                <li><a href="https://www.linkedin.com/company-beta/10415531" class="template-icon-social-linkedin" target="_blank"></a></li>
             </ul>
 
             <!-- Copyright -->
             <div class="template-footer-bottom-copyright">
-                <a href=" " target="_blank">Mermaid</a> &copy; 2017
+                <a href="" target="_blank">Mermaid</a> &copy; 2017
             </div>
 
         </div>
@@ -153,6 +153,22 @@
                         <button type="button" id="joinUs-submit" class="btn btn-primary">Join Us</button>
                     </div>
                 </form>
+            </div>
+        </div>
+    </div>
+</div>
+{{--thank you modal--}}
+<div id="succModal" class="modal fade">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-body">
+                <br><br>
+                <div class="center-block" style="text-align: center;">
+                    <h2>THANK<span style="color: #8220a2;"> YOU!!</span></h2>
+                    <br>
+                    <button type="button" id="close-modal2"  class="btn btn-default btn-lg">Back</button>
+                </div>
+                <br><br>
             </div>
         </div>
     </div>
@@ -232,10 +248,12 @@
                         name: $("#joinUs-name").val()
                     },
                     function (data, status) {
-
-                        alert("Data: " + data + "\nStatus: " + status);
                         $("#mermaidModal").modal('hide')
+                        $("#succModal").modal('toggle')
                     });
+        });
+        $("#close-modal2").click(function () {
+            location.reload();
         });
         $("#becomeMermaid").click(function () {
             $("#mermaidModal").modal('toggle')
