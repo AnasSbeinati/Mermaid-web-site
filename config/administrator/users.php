@@ -1,10 +1,10 @@
 <?php
 return array (
-    'title' => 'bookings',
+    'title' => 'Users',
 
-	'single' => 'booking',
+	'single' => 'user',
 
-	'model' => 'App\Booking',
+	'model' => 'App\User',
     'rules' => array(
         //'lang' => 'required',
     ),
@@ -36,15 +36,7 @@ return array (
         ),
         'apartment_number' => array(
             'title' => 'Apartment Number'
-        ),
-        'booking_date' => array(
-            'title' => 'Booking Date'
-        ),
-        'comments' => array(
-            'title' => 'Comments'
-        ),'created_at' => array(
-            'title' => 'Booking Time'
-        ),
+        )
 
     ),
     /**
@@ -68,14 +60,6 @@ return array (
         ),
         'apartment_number' => array(
             'title' => 'Apartment Number'
-        ),
-        'booking_date' => array(
-            'title' => 'Booking Date'
-        ),
-        'comments' => array(
-            'title' => 'Comments'
-        ),'created_at' => array(
-             'title' => 'Request Booking Time'
-        ),
+        )
     ),
 );
