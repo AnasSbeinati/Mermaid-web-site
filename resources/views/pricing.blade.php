@@ -115,7 +115,7 @@
 
                                 <!-- Package -->
                                 <li>
-
+                                    <input class="state" hidden value="0">
                                     <!-- Header -->
                                     <h4 class="template-component-booking-package-name">House Space 80-120 m </h4>
 
@@ -157,7 +157,7 @@
 
                                 <!-- Package -->
                                 <li>
-
+                                    <input class="state" hidden value="1">
                                     <!-- Header -->
                                     <h4 class="template-component-booking-package-name">House Space 120-160 m</h4>
 
@@ -199,6 +199,8 @@
 
                                 <!-- Package -->
                                 <li>
+                                    <input class="state" hidden value="2">
+
                                     <h4 class="template-component-booking-package-name">House Space 160-200 m</h4>
                                     <div class="template-component-booking-package-price">
                                         <span class="template-component-booking-package-price-currency">EGP</span>
@@ -230,6 +232,7 @@
 
                                 <!-- Package -->
                                 <li>
+                                    <input class="state" hidden value="3">
                                     <h4 class="template-component-booking-package-name">House Space 200-250+ m</h4>
                                     <div class="template-component-booking-package-price">
                                         <span class="template-component-booking-package-price-currency">EGP</span>
@@ -659,8 +662,9 @@
 
                         <h2>Logged in <span style="color: #8220a2;">Successfully  !!</span></h2>
                         <br>
-
-                        <button type="submit" id="confirmed-booking" class="btn btn-default btn-lg btn-back">Confirm Booking</button>
+                        <h4 id="succes_buttom">Confirm The Booking Please</h4>
+                        <h4 id="back_buttom" style="display: none;">Go Back and fill the booking form</h4>
+                        <button type="button" id="confirmed-booking" class="btn btn-default btn-lg btn-back">Confirm Booking</button>
                         <button type="button" id="close-modal" data-dismiss="modal" class="btn btn-default btn-lg">Back</button>
                     </div>
                     <br><br>
@@ -676,6 +680,7 @@
                     <div class="center-block" style="text-align: center;">
 
                         <h2>THANK<span style="color: #8220a2;"> YOU!!</span></h2>
+                        <br>
                         <h5 style="text-transform: uppercase">We will confirm the appointment with you soon.</h5>
                         <br>
                         <button type="button" id="close-modal" data-dismiss="modal" class="btn btn-default btn-lg">Back</button>
@@ -740,7 +745,18 @@
             }
             return null;
         }
-
+        function assignCookies() {
+            var y = readCookie('user_type');
+            if(y) {
+                $("#booking-form-first-name").val(y.first_name);
+                $("#booking-form-second-name").val(y.second_name);
+                $("#booking-form-phone").val(y.phone_number);
+                $("#booking-form-address").val(y.address);
+                $("#booking-form-email").val(y.email);
+                $("#booking-form-appartment").val(y.apartment_number);
+                $("#login_buttom").css("display","none");
+            }
+        }
         jQuery(document).ready(function($)
         {
             $('#template-booking').booking();
@@ -748,18 +764,12 @@
             /*new code*/
             var x = readCookie('user_type');
             console.log(x);
-            if(x) {
-                $("#booking-form-first-name").val(x.first_name);
-                $("#booking-form-second-name").val(x.second - name);
-                $("#booking-form-phone").val(x.phone);
-                $("#booking-form-address").val(x.address);
-                $("#booking-form-email").val(x.email);
-                $("#booking-form-appartment").val(x.appartment);
-                $("#booking-form-date").val(x.date);
-                $("#login-buttom").css("display","none");
-            }
-            $("#confirmed-booking").click(function(){
+           assignCookies();
 
+            $("#confirmed-booking").click(function(){
+                var all = $(".mbox").map(function() {
+                    return this.innerHTML;
+                }).get();
                     $.post("{{route('request.booking')}}",
                         {
                             first_name: $("#booking-form-first-name").val(),
@@ -769,7 +779,12 @@
                             email: $("#booking-form-email").val(),
                             apartment_number: $("#booking-form-appartment").val(),
                             booking_date: $("#booking-form-date").val(),
-                            comments: $("#booking-form-message").val()
+                            comments: $("#booking-form-message").val(),
+                            estimated_time: $(".template-component-booking-summary-duration>h5>span:first-child").text()+"H "
+                            +$(".template-component-booking-summary-duration>h5>span:nth-child(3)").text()+" MIN",
+                            estimated_cost: $(".template-component-booking-summary-price-value").text()+" EGP",
+                            package: $(".template-state-selected>input").val(),
+                            extras: [1,2,3]
                         },
                         function (data, status) {
                             $('.modal').modal('hide');
@@ -792,7 +807,7 @@
                    var dateTime = date+' '+time;
                    $.post("{{route('sign_up')}}",
                        {
-                           first_name: ("#sign-up-first_name").val(),
+                           first_name: $("#sign-up-first_name").val(),
                            second_name: $("#sign-up-second_name").val(),
                            phone_number: $("#sign-up-phone").val(),
                            address: $("#sign-up-address").val(),
@@ -801,16 +816,30 @@
                            password: $("#sign-up-pass").val()
                        },
                        function (data, status) {
-                           d = data;
-                           console.log("Data: " + data + "\nStatus: " + status);
+                           var expires = "";
+                           var date = new Date();
+                           date.setTime(date.getTime() + (10000 * 24 * 60 * 60 * 1000));
+                           expires = "; expires=" + date.toUTCString();
+                           document.cookie = "user_type" + "=" + JSON.stringify(data) + expires + ";";
+                           assignCookies();
+
+                           if(!checkBookingForm()){
+                               $('#confirmed-booking').css("display","none");
+                               $('#succes_buttom').css("display","none");
+                               $('#back_buttom').css("display","block");
+                               $(".modal").modal('hide');
+                               $("#logingMsgSuccModal").modal('show');
+                               $('#back_buttom').css("display","none");
+                           }
+                           else {
+                               $('#confirmed-booking').css("display","inline");
+                               $('#succes_buttom').css("display","block");
+                               $(".modal").modal('hide');
+                               $("#logingMsgSuccModal").modal('show');
+                               console.log("yesssss");
+                           }
+
                        }).fail(function () {
-                       console.log($("#sign-up-first_name").val());
-                       console.log($("#sign-up-second_name").val());
-                       console.log($("#sign-up-phone").val());
-                       console.log($("#sign-up-address").val());
-                       console.log($("#sign-up-apartment_number").val());
-                       console.log($("#sign-up-email").val());
-                       console.log($("#sign-up-pass").val());
                    });
                }
             });
@@ -825,21 +854,20 @@
                             password: $("#login-pass").val()
                         },
                         function (data, status) {
-                            console.log(data);
-                            if (status == 200) {
-                                var expires = "";
-                                if (days) {
+
+                                    var expires = "";
                                     var date = new Date();
                                     date.setTime(date.getTime() + (10000 * 24 * 60 * 60 * 1000));
                                     expires = "; expires=" + date.toUTCString();
-                                }
                                 document.cookie = "user_type" + "=" + JSON.stringify(data) + expires + ";";
-                                $("#logingModal").modal('hide');
+                                assignCookies();
+                                $("#login_buttom").css("display","none");
+                                $(".modal").modal('hide');
+                                if(!checkBookingForm()){
+                                    $('#confirmed-booking').css("display","none");
+                                }
                                 $("#logingMsgSuccModal").modal('show');
-                            } else{
-                                $("#login_error").css("display", "block");
-                                console.log('login_error');
-                            }
+
                         }).fail(function () {
                         $("#login_error").css("display", "block");
                         console.log('login_error');
@@ -873,7 +901,8 @@
                 $("#logingModal").modal('show');
             });
             $("#confirm-booking").click(function () {
-                if(checkBookingForm()&&!x){
+                var x = readCookie('user_type');
+                if(checkBookingForm()&&x){
                     $("#filling_form").css("display", "none");
                     $(".addition").css("display", "none");
                     $("#sign-up-email").val($("#booking-form-email").val());
@@ -882,9 +911,21 @@
                     $("#sign-up-phone").val($("#booking-form-phone").val());
                     $("#sign-up-address").val($("#booking-form-address").val());
                     $("#sign-up-apartment_number").val($("#booking-form-appartment").val());
-                    $("#logingModal").modal('toggle');
-                }else{
+                    $("#logingMsgSuccModal").modal('toggle');
+                    $('#confirmed-booking').css("display","inline");
+                }else if(!checkBookingForm()){
                     $("#filling_form").css("display", "block");
+                }else if(checkBookingForm()&&!x){
+                    $("#logingModal").modal('toggle');
+                    $(".addition").css("display", "none");
+                    $("#sign-up-email").val($("#booking-form-email").val());
+                    $("#sign-up-first_name").val($("#booking-form-first-name").val());
+                    $("#sign-up-second_name").val($("#booking-form-second-name").val());
+                    $("#sign-up-phone").val($("#booking-form-phone").val());
+                    $("#sign-up-address").val($("#booking-form-address").val());
+                    $("#confirmed-booking").css("display","inline");
+                    $("#sign-up-apartment_number").val($("#booking-form-appartment").val());
+
                 }
             });
         });

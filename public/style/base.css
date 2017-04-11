@@ -4760,9 +4760,11 @@ form #joinUs {
 	transition:background-color 0.2s ease,border-color 0.2s ease,color 0.2s ease;
 }
 #login_buttom{
-    cursor: p;
+    cursor: pointer;
 }
-
+#ConfirmSuccModal{
+	margin-top: 90px;
+}
 /*media queries*/
 @media screen and (max-width: 699px) and (min-width: 520px) {
 	.template-component-booking .template-component-booking-package-list>li {
