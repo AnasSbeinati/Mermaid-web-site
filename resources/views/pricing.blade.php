@@ -792,14 +792,13 @@
                    var dateTime = date+' '+time;
                    $.post("{{route('sign_up')}}",
                        {
-                           first_name: $("#sign-up-first_name").val(),
-                           second_name: $("#sign-up-second_name").val(),
-                           phone_number: $("#sign-up-phone").val(),
-                           address: $("#sign-up-address").val(),
-                           email: $("#sign-up-email").val(),
-                           apartment_number: $("#sign-up-appartment").val(),
-                           password: $("#sign-up-pass").val(),
-                           booking_date: dateTime
+                           first_name: toString(("#sign-up-first_name").val()),
+                           second_name: toString($("#sign-up-second_name").val()),
+                           phone_number: toString($("#sign-up-phone").val()),
+                           address: toString($("#sign-up-address").val()),
+                           email: toString($("#sign-up-email").val()),
+                           apartment_number: toString($("#sign-up-apartment_number").val()),
+                           password: toString($("#sign-up-pass").val())
                        },
                        function (data, status) {
                            d = data;
@@ -809,10 +808,9 @@
                        console.log($("#sign-up-second_name").val());
                        console.log($("#sign-up-phone").val());
                        console.log($("#sign-up-address").val());
-                       console.log($("#sign-up-email").val());
                        console.log($("#sign-up-apartment_number").val());
+                       console.log($("#sign-up-email").val());
                        console.log($("#sign-up-pass").val());
-                       console.log(dateTime);
                    });
                }
             });
@@ -821,8 +819,8 @@
                 if (x==null) {
                     $.post("{{route('login')}}",
                         {
-                            email: $("#login-email").val(),
-                            password: $("#login-pass").val()
+                            email: toString($("#login-email").val()),
+                            password: toString($("#login-pass").val())
                         },
                         function (data, status) {
                             alert("Data: " + data + "\nStatus: " + status);
