@@ -163,7 +163,7 @@
                              data-splitin="none"
                              data-splitout="none"
                              data-responsive_offset="on"
-                             style="letter-spacing: 4px;"
+                             style="letter-spacing: 4px;;margin-top: 15px;"
                         >
 
                             AND GET CLEANING DONE !
@@ -403,7 +403,7 @@
                     <span class="template-icon-feature-phone-circle"></span>
                     <h5>Call Us At</h5>
                     <p>
-                        (+20) 0109 105 6106<br/>
+                        (+20) 0101 052 3919<br/>
                     </p>
                 </li>
 
@@ -414,10 +414,10 @@
                     <p>
                         Cairo
                         <br/>
-                        maady <br/>
-                        mohndsien <br/>
-                        zamalek <br/>
-                        downtown <br/>
+                        El Maadi <br/>
+                        Mohandeseen <br/>
+                        Zamalek <br/>
+                        Downtown <br/>
                     </p>
                 </li>
 

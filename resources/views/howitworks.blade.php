@@ -131,21 +131,21 @@
                     <li class="template-layout-column-left">
                         <span class="template-icon-feature-team"></span>
                         <h5>Sklilled Mermaids</h5>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam at iaculis lorem. Phasellus faucibus est mauris, id dignissim urna venenatis sit amet. Phasellus lobortis metus ut lacinia varius.</p>
+                        <p>All our Mermaids are professional cleaners. Trained, trusted and love to help our customers and give your home the care it needs.</p>
                     </li>
 
                     <!-- Center column -->
                     <li class="template-layout-column-center">
                         <span class="template-icon-feature-share-time"></span>
                         <h5>Always On Time</h5>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam at iaculis lorem. Phasellus faucibus est mauris, id dignissim urna venenatis sit amet. Phasellus lobortis metus ut lacinia varius.</p>
+                        <p>You can count on us! Our mermaids are on always on time, we show up on time and finish our task on time.</p>
                     </li>
 
                     <!-- Right column -->
                     <li class="template-layout-column-right">
                         <span class="template-icon-feature-vacuum-cleaner"></span>
                         <h5>Best Cleaning Equipment</h5>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam at iaculis lorem. Phasellus faucibus est mauris, id dignissim urna venenatis sit amet. Phasellus lobortis metus ut lacinia varius.</p>
+                        <p>Cleaning is our game, and being attentive to details is what makes Mermaid special!</p>
                     </li>
                 </ul>
             </div>
@@ -156,7 +156,7 @@
         <div class="template-section template-section-padding-reset template-clear-fix">
 
             <!-- Counter list -->
-            <div class="template-component-counter-box-list">
+            {{----}}{{--<div class="template-component-counter-box-list">
 
                 <!-- Layout 25x25x25x25% -->
                 <ul class="template-layout-25x25x25x25 template-layout-margin-reset template-clear-fix">
@@ -191,7 +191,7 @@
 
                 </ul>
 
-            </div>
+            </div>--}}
 
         </div>
     </div>

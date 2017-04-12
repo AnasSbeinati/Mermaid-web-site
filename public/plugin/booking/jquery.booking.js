@@ -65,13 +65,20 @@
 			});
 			
 			/***/
-			
+            Date.prototype.addDays = function(days) {
+                var dat = new Date(this.valueOf());
+                dat.setDate(dat.getDate() + days);
+                return dat;
+            }
+
+            var today = new Date();
 			$("#dtBox").DateTimePicker(
 			{
-				dateTimeFormat		:	'yyyy-MM-dd HH:mm:ss',
+				dateTimeFormat		:	'yyyy-MM-dd hh:mm:ss',
 				animationDuration	:	500,
 				minuteInterval		:	10,
-				buttonsToDisplay	:	['SetButton','ClearButton']
+				buttonsToDisplay	:	['SetButton','ClearButton'],
+                minDateTime			:	today.addDays(6)
 			});
 			
 			/***/

@@ -4766,11 +4766,13 @@ form #joinUs {
 	margin-top: 90px;
 }
 /*media queries*/
-@media screen and (max-width: 699px) and (min-width: 520px) {
+@media screen and (max-width: 699px) and (min-width: 320px) {
 	.template-component-booking .template-component-booking-package-list>li {
 		flex-basis: 100%;
 	}
-
+	/*.tp-mask-wrap>div{
+		margin-top: 15px !important;
+	}*/
 }
 @media screen and (max-width: 1000px) and (min-width: 700px) {
 	.template-component-booking .template-component-booking-package-list>li {
